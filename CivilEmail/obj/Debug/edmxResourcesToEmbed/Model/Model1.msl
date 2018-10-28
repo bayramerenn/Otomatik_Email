@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BTHModelStoreContainer" CdmEntityContainer="BTHEntities1">
+    <EntitySetMapping Name="Zamanlayici">
+      <EntityTypeMapping TypeName="BTHModel.Zamanlayici">
+        <MappingFragment StoreEntitySet="Zamanlayici">
+          <ScalarProperty Name="ZamanTip" ColumnName="ZamanTip" />
+          <ScalarProperty Name="ZamanBitis" ColumnName="ZamanBitis" />
+          <ScalarProperty Name="ZamanBaslangic" ColumnName="ZamanBaslangic" />
+          <ScalarProperty Name="CalismaBiris" ColumnName="CalismaBiris" />
+          <ScalarProperty Name="CalismaBaslangic" ColumnName="CalismaBaslangic" />
+          <ScalarProperty Name="CalismaTuru" ColumnName="CalismaTuru" />
+          <ScalarProperty Name="CalismaSikligi" ColumnName="CalismaSikligi" />
+          <ScalarProperty Name="BirKereCalis" ColumnName="BirKereCalis" />
+          <ScalarProperty Name="AyTuru" ColumnName="AyTuru" />
+          <ScalarProperty Name="AyGunu" ColumnName="AyGunu" />
+          <ScalarProperty Name="HaftaGunleri" ColumnName="HaftaGunleri" />
+          <ScalarProperty Name="Aylik" ColumnName="Aylik" />
+          <ScalarProperty Name="Haftalik" ColumnName="Haftalik" />
+          <ScalarProperty Name="Gunluk" ColumnName="Gunluk" />
+          <ScalarProperty Name="CalismaTipi" ColumnName="CalismaTipi" />
+          <ScalarProperty Name="YinelenenTur" ColumnName="YinelenenTur" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="ZamanTuru" ColumnName="ZamanTuru" />
+          <ScalarProperty Name="ZamanAdi" ColumnName="ZamanAdi" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
