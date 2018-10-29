@@ -9,7 +9,6 @@
           <ScalarProperty Name="ZamanBaslangic" ColumnName="ZamanBaslangic" />
           <ScalarProperty Name="CalismaBiris" ColumnName="CalismaBiris" />
           <ScalarProperty Name="CalismaBaslangic" ColumnName="CalismaBaslangic" />
-          <ScalarProperty Name="CalismaTuru" ColumnName="CalismaTuru" />
           <ScalarProperty Name="CalismaSikligi" ColumnName="CalismaSikligi" />
           <ScalarProperty Name="BirKereCalis" ColumnName="BirKereCalis" />
           <ScalarProperty Name="AyTuru" ColumnName="AyTuru" />

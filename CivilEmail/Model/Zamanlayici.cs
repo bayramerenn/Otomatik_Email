@@ -26,9 +26,8 @@ namespace CivilEmail.Model
         public string HaftaGunleri { get; set; }
         public Nullable<int> AyGunu { get; set; }
         public Nullable<int> AyTuru { get; set; }
-        public Nullable<System.DateTime> BirKereCalis { get; set; }
+        public Nullable<bool> BirKereCalis { get; set; }
         public Nullable<int> CalismaSikligi { get; set; }
-        public string CalismaTuru { get; set; }
         public Nullable<System.TimeSpan> CalismaBaslangic { get; set; }
         public Nullable<System.TimeSpan> CalismaBiris { get; set; }
         public Nullable<System.DateTime> ZamanBaslangic { get; set; }

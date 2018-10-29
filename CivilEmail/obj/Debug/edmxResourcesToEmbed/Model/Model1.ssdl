@@ -16,11 +16,10 @@
     <Property Name="AyGunu" Type="int" />
     <Property Name="AyTuru" Type="int" />
     <Property Name="CalismaTipi" Type="bit" />
-    <Property Name="BirKereCalis" Type="datetime" />
+    <Property Name="BirKereCalis" Type="bit" />
     <Property Name="CalismaSikligi" Type="int" />
-    <Property Name="CalismaTuru" Type="nvarchar" MaxLength="50" />
-    <Property Name="CalismaBaslangic" Type="time" Precision="7" />
-    <Property Name="CalismaBiris" Type="time" Precision="7" />
+    <Property Name="CalismaBaslangic" Type="time" Precision="0" />
+    <Property Name="CalismaBiris" Type="time" Precision="0" />
     <Property Name="ZamanBaslangic" Type="date" />
     <Property Name="ZamanBitis" Type="date" />
     <Property Name="ZamanTip" Type="bit" />

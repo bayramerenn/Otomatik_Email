@@ -23,13 +23,15 @@ namespace CivilEmail
         Daily daily;
         Monthly monthly;
         Weekly weekly;
-
+        private bool Her;
+        private bool BirKereCalis;
 
         private void Form2_Load(object sender, EventArgs e)
         {
             grpTekBir.Enabled = false;
             teBirkere.Enabled = false;
             deBitisZamani.Enabled = false;
+            chcHer.Checked = true;
 
             if (cboCalisma.SelectedIndex == 0)
             {
@@ -108,6 +110,7 @@ namespace CivilEmail
         {
             if (chcBirkerecalis.Checked == true)
             {
+                BirKereCalis = true;
                 speSaatte.Enabled = false;
                 cboZamanTipi.Enabled = false;
                 teBaslangic.Enabled = false;
@@ -117,6 +120,7 @@ namespace CivilEmail
                 teBirkere.Enabled = true;
 
                 chcHer.Checked = false;
+                Her = false;
             }
             else
             {
@@ -128,6 +132,7 @@ namespace CivilEmail
         {
             if (chcHer.Checked == true)
             {
+                Her = true;
                 speSaatte.Enabled = true;
                 cboZamanTipi.Enabled = true;
                 teBaslangic.Enabled = true;
@@ -136,6 +141,7 @@ namespace CivilEmail
                 teBirkere.Enabled = false;
 
                 chcBirkerecalis.Checked = false;
+                BirKereCalis = false;
             }
             else
             {
@@ -190,15 +196,14 @@ namespace CivilEmail
                 zaman.Durum = chcDurum.Checked;
                 zaman.YinelenenTur = cboCalisma.Text;
                 zaman.Gunluk = (int)daily.speGundeBir.Value;
-                zaman.CalismaTipi = chcHer.Checked = true;
+                zaman.CalismaTipi = Her;
+                zaman.BirKereCalis = BirKereCalis;
                 zaman.CalismaSikligi = (int)speSaatte.Value;
-                zaman.CalismaTuru = cboCalisma.Text;
-                zaman.CalismaBaslangic = TimeSpan.Parse(teBaslangic.Text);
-                zaman.CalismaBiris = TimeSpan.Parse(teBitis.Text);
+                zaman.CalismaBaslangic = TimeSpan.Parse(BirKereCalis == true ? teBirkere.Text : teBaslangic.Text);
+                zaman.CalismaBiris = TimeSpan.Parse(BirKereCalis == true ? "00:00:00" : teBitis.Text);
                 zaman.ZamanBaslangic = Convert.ToDateTime(deBaslangicZamani.Text);
                 zaman.ZamanBitis = Convert.ToDateTime
                     (chcZamanYok.Checked == true ? "01.01.2090" : deBitisZamani.Text);
-
                 try
                 {
                     db.Zamanlayici.Add(zaman);
@@ -208,12 +213,9 @@ namespace CivilEmail
                 }
                 catch (Exception ex)
                 {
-
                     MessageBox.Show(ex.ToString(), "Hata");
                 }
-
             }
-
             else if (cboCalisma.SelectedIndex == 1 && cboZamanlama.SelectedIndex == 0)
             {
 
@@ -227,6 +229,13 @@ namespace CivilEmail
                         zaman.YinelenenTur = cboCalisma.Text;
                         zaman.Haftalik = (int)weekly.speHaftadaBir.Value;
                         zaman.HaftaGunleri = gunler.Key;
+                        zaman.CalismaTipi = chcHer.Checked;
+                        zaman.CalismaSikligi = (int)speSaatte.Value;
+                        zaman.CalismaBaslangic = TimeSpan.Parse(teBaslangic.Text);
+                        zaman.CalismaBiris = TimeSpan.Parse(teBitis.Text);
+                        zaman.ZamanBaslangic = Convert.ToDateTime(deBaslangicZamani.Text);
+                        zaman.ZamanBitis = Convert.ToDateTime
+                            (chcZamanYok.Checked == true ? "01.01.2090" : deBitisZamani.Text);
                         try
                         {
                             db.Zamanlayici.Add(zaman);
@@ -262,6 +271,6 @@ namespace CivilEmail
             cboCalisma.SelectedIndex = 0;
         }
 
-
+      
     }
 }

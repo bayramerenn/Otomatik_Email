@@ -21,11 +21,10 @@
           <Property Name="AyGunu" Type="int" />
           <Property Name="AyTuru" Type="int" />
           <Property Name="CalismaTipi" Type="bit" />
-          <Property Name="BirKereCalis" Type="datetime" />
+          <Property Name="BirKereCalis" Type="bit" />
           <Property Name="CalismaSikligi" Type="int" />
-          <Property Name="CalismaTuru" Type="nvarchar" MaxLength="50" />
-          <Property Name="CalismaBaslangic" Type="time" Precision="7" />
-          <Property Name="CalismaBiris" Type="time" Precision="7" />
+          <Property Name="CalismaBaslangic" Type="time" Precision="0" />
+          <Property Name="CalismaBiris" Type="time" Precision="0" />
           <Property Name="ZamanBaslangic" Type="date" />
           <Property Name="ZamanBitis" Type="date" />
           <Property Name="ZamanTip" Type="bit" />
@@ -56,11 +55,10 @@
           <Property Name="HaftaGunleri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="AyGunu" Type="Int32" />
           <Property Name="AyTuru" Type="Int32" />
-          <Property Name="BirKereCalis" Type="DateTime" Precision="3" />
+          <Property Name="BirKereCalis" Type="Boolean" />
           <Property Name="CalismaSikligi" Type="Int32" />
-          <Property Name="CalismaTuru" Type="String" />
-          <Property Name="CalismaBaslangic" Type="Time" Precision="7" />
-          <Property Name="CalismaBiris" Type="Time" Precision="7" />
+          <Property Name="CalismaBaslangic" Type="Time" Precision="0" />
+          <Property Name="CalismaBiris" Type="Time" Precision="0" />
           <Property Name="ZamanBaslangic" Type="DateTime" Precision="0" />
           <Property Name="ZamanBitis" Type="DateTime" Precision="0" />
           <Property Name="ZamanTip" Type="Boolean" />
@@ -79,7 +77,6 @@
                 <ScalarProperty Name="ZamanBaslangic" ColumnName="ZamanBaslangic" />
                 <ScalarProperty Name="CalismaBiris" ColumnName="CalismaBiris" />
                 <ScalarProperty Name="CalismaBaslangic" ColumnName="CalismaBaslangic" />
-                <ScalarProperty Name="CalismaTuru" ColumnName="CalismaTuru" />
                 <ScalarProperty Name="CalismaSikligi" ColumnName="CalismaSikligi" />
                 <ScalarProperty Name="BirKereCalis" ColumnName="BirKereCalis" />
                 <ScalarProperty Name="AyTuru" ColumnName="AyTuru" />

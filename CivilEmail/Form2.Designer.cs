@@ -1,4 +1,6 @@
-﻿namespace CivilEmail
+﻿using System;
+
+namespace CivilEmail
 {
     partial class Form2
     {
@@ -37,7 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.grpTekBir = new DevExpress.XtraEditors.GroupControl();
             this.timeEdit1 = new DevExpress.XtraEditors.TimeEdit();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.deTekBirDefa = new DevExpress.XtraEditors.DateEdit();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.grpYinelenen = new DevExpress.XtraEditors.GroupControl();
@@ -70,8 +72,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grpTekBir)).BeginInit();
             this.grpTekBir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timeEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deTekBirDefa.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deTekBirDefa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpYinelenen)).BeginInit();
             this.grpYinelenen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cboCalisma.Properties)).BeginInit();
@@ -178,7 +180,7 @@
             // grpTekBir
             // 
             this.grpTekBir.Controls.Add(this.timeEdit1);
-            this.grpTekBir.Controls.Add(this.dateEdit1);
+            this.grpTekBir.Controls.Add(this.deTekBirDefa);
             this.grpTekBir.Controls.Add(this.label3);
             this.grpTekBir.Controls.Add(this.label4);
             this.grpTekBir.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -198,17 +200,17 @@
             this.timeEdit1.Size = new System.Drawing.Size(100, 20);
             this.timeEdit1.TabIndex = 3;
             // 
-            // dateEdit1
+            // deTekBirDefa
             // 
-            this.dateEdit1.EditValue = new System.DateTime(2018, 10, 25, 13, 33, 45, 0);
-            this.dateEdit1.Location = new System.Drawing.Point(153, 29);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.deTekBirDefa.EditValue = DateTime.Now;
+            this.deTekBirDefa.Location = new System.Drawing.Point(153, 29);
+            this.deTekBirDefa.Name = "deTekBirDefa";
+            this.deTekBirDefa.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.deTekBirDefa.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(100, 20);
-            this.dateEdit1.TabIndex = 2;
+            this.deTekBirDefa.Size = new System.Drawing.Size(100, 20);
+            this.deTekBirDefa.TabIndex = 2;
             // 
             // label3
             // 
@@ -373,7 +375,6 @@
             // 
             // chcHer
             // 
-            this.chcHer.EditValue = true;
             this.chcHer.Location = new System.Drawing.Point(22, 18);
             this.chcHer.Name = "chcHer";
             this.chcHer.Properties.Caption = "Her";
@@ -465,7 +466,7 @@
             // 
             // deBitisZamani
             // 
-            this.deBitisZamani.EditValue = new System.DateTime(2018, 10, 25, 13, 34, 25, 0);
+            this.deBitisZamani.EditValue = DateTime.Now;
             this.deBitisZamani.Location = new System.Drawing.Point(595, 44);
             this.deBitisZamani.Name = "deBitisZamani";
             this.deBitisZamani.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -477,7 +478,7 @@
             // 
             // deBaslangicZamani
             // 
-            this.deBaslangicZamani.EditValue = new System.DateTime(2018, 10, 25, 13, 32, 31, 608);
+            this.deBaslangicZamani.EditValue = new System.DateTime(2018, 10, 29, 4, 54, 33, 296);
             this.deBaslangicZamani.Location = new System.Drawing.Point(113, 44);
             this.deBaslangicZamani.Name = "deBaslangicZamani";
             this.deBaslangicZamani.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -506,8 +507,8 @@
             this.grpTekBir.ResumeLayout(false);
             this.grpTekBir.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timeEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deTekBirDefa.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deTekBirDefa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpYinelenen)).EndInit();
             this.grpYinelenen.ResumeLayout(false);
             this.grpYinelenen.PerformLayout();
@@ -545,7 +546,7 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.GroupControl grpTekBir;
         private DevExpress.XtraEditors.TimeEdit timeEdit1;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.DateEdit deTekBirDefa;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private DevExpress.XtraEditors.GroupControl grpYinelenen;
