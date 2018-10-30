@@ -16,15 +16,14 @@
     <Property Name="Gunluk" Type="Int32" />
     <Property Name="Haftalik" Type="Int32" />
     <Property Name="Aylik" Type="Int32" />
-    <Property Name="HaftaGunleri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="AyGunu" Type="Int32" />
-    <Property Name="AyTuru" Type="Int32" />
-    <Property Name="BirKereCalis" Type="Boolean" />
-    <Property Name="CalismaSikligi" Type="Int32" />
+    <Property Name="AyTuru" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="CalismaBaslangic" Type="Time" Precision="0" />
     <Property Name="CalismaBiris" Type="Time" Precision="0" />
     <Property Name="ZamanBaslangic" Type="DateTime" Precision="0" />
     <Property Name="ZamanBitis" Type="DateTime" Precision="0" />
-    <Property Name="ZamanTip" Type="Boolean" />
+    <Property Name="ZamanTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gunler" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CalismaSuresi" Type="Int32" />
   </EntityType>
 </Schema>

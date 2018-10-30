@@ -23,15 +23,14 @@ namespace CivilEmail.Model
         public Nullable<int> Gunluk { get; set; }
         public Nullable<int> Haftalik { get; set; }
         public Nullable<int> Aylik { get; set; }
-        public string HaftaGunleri { get; set; }
         public Nullable<int> AyGunu { get; set; }
-        public Nullable<int> AyTuru { get; set; }
-        public Nullable<bool> BirKereCalis { get; set; }
-        public Nullable<int> CalismaSikligi { get; set; }
+        public string AyTuru { get; set; }
         public Nullable<System.TimeSpan> CalismaBaslangic { get; set; }
         public Nullable<System.TimeSpan> CalismaBiris { get; set; }
         public Nullable<System.DateTime> ZamanBaslangic { get; set; }
         public Nullable<System.DateTime> ZamanBitis { get; set; }
-        public Nullable<bool> ZamanTip { get; set; }
+        public string ZamanTipi { get; set; }
+        public string Gunler { get; set; }
+        public Nullable<int> CalismaSuresi { get; set; }
     }
 }

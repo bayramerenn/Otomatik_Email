@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
+using DevExpress.LookAndFeel;
 
 namespace CivilEmail
 {
@@ -20,7 +21,10 @@ namespace CivilEmail
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new Form2());
+
+            UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Office2016Colorful);
+            Application.Run(new RibbonForm1());
+            
         }
     }
 }

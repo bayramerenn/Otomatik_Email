@@ -18,6 +18,9 @@ namespace CivilEmail.UserControl
             InitializeComponent();
         }
 
+        //private static bool HerIlk;
+        //private static bool HerIkinci;
+
         private void chcHekikinci_CheckedChanged(object sender, EventArgs e)
         {
             if (chcHekikinci.Checked == true)
@@ -27,15 +30,16 @@ namespace CivilEmail.UserControl
                 seGunu.Enabled = false;
 
                 seAydaBirikinci.Enabled = true;
-                cmdZaman.Enabled = true;
-                cmdGun.Enabled = true;
+                cboZaman.Enabled = true;
+                cboGun.Enabled = true;
 
                 chcHerilk.Checked = false;
+               
             }
             else
             {
                 chcHekikinci.Checked = false;
-                
+
             }
         }
 
@@ -44,19 +48,20 @@ namespace CivilEmail.UserControl
             if (chcHerilk.Checked == true)
             {
                
-                cmdGun.Enabled = false;
-                cmdZaman.Enabled = false;
+                cboGun.Enabled = false;
+                cboZaman.Enabled = false;
                 seAydaBirikinci.Enabled = false;
 
                 seAydaBir.Enabled = true;
                 seGunu.Enabled = true;
 
                 chcHekikinci.Checked = false;
+               
             }
             else
             {
                 chcHerilk.Checked = false;
-             
+
             }
         }
     }

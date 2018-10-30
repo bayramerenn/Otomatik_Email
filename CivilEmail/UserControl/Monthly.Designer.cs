@@ -37,15 +37,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.chcHerilk = new DevExpress.XtraEditors.CheckEdit();
             this.chcHekikinci = new DevExpress.XtraEditors.CheckEdit();
-            this.cmdZaman = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cmdGun = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cboZaman = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cboGun = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.seAydaBir.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seGunu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seAydaBirikinci.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chcHerilk.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chcHekikinci.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmdZaman.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmdGun.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboZaman.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboGun.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // seAydaBir
@@ -145,30 +145,30 @@
             this.chcHekikinci.TabIndex = 9;
             this.chcHekikinci.CheckedChanged += new System.EventHandler(this.chcHekikinci_CheckedChanged);
             // 
-            // cmdZaman
+            // cboZaman
             // 
-            this.cmdZaman.EditValue = "İlk";
-            this.cmdZaman.Location = new System.Drawing.Point(252, 38);
-            this.cmdZaman.Name = "cmdZaman";
-            this.cmdZaman.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cboZaman.EditValue = "İlk";
+            this.cboZaman.Location = new System.Drawing.Point(252, 38);
+            this.cboZaman.Name = "cboZaman";
+            this.cboZaman.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmdZaman.Properties.Items.AddRange(new object[] {
+            this.cboZaman.Properties.Items.AddRange(new object[] {
             "İlk",
             "İkinci",
             "Üçüncü",
             "Dörtüncü",
             "Son"});
-            this.cmdZaman.Size = new System.Drawing.Size(66, 20);
-            this.cmdZaman.TabIndex = 10;
+            this.cboZaman.Size = new System.Drawing.Size(66, 20);
+            this.cboZaman.TabIndex = 10;
             // 
-            // cmdGun
+            // cboGun
             // 
-            this.cmdGun.EditValue = "Pazartesi";
-            this.cmdGun.Location = new System.Drawing.Point(324, 38);
-            this.cmdGun.Name = "cmdGun";
-            this.cmdGun.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cboGun.EditValue = "Pazartesi";
+            this.cboGun.Location = new System.Drawing.Point(324, 38);
+            this.cboGun.Name = "cboGun";
+            this.cboGun.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmdGun.Properties.Items.AddRange(new object[] {
+            this.cboGun.Properties.Items.AddRange(new object[] {
             "Pazartesi",
             "Salı",
             "Çarşamba",
@@ -176,15 +176,15 @@
             "Cuma",
             "Cumartesi",
             "Pazar"});
-            this.cmdGun.Size = new System.Drawing.Size(100, 20);
-            this.cmdGun.TabIndex = 10;
+            this.cboGun.Size = new System.Drawing.Size(100, 20);
+            this.cboGun.TabIndex = 10;
             // 
             // Monthly
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cmdGun);
-            this.Controls.Add(this.cmdZaman);
+            this.Controls.Add(this.cboGun);
+            this.Controls.Add(this.cboZaman);
             this.Controls.Add(this.chcHekikinci);
             this.Controls.Add(this.chcHerilk);
             this.Controls.Add(this.seGunu);
@@ -201,8 +201,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.seAydaBirikinci.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chcHerilk.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chcHekikinci.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmdZaman.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmdGun.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboZaman.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboGun.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,7 +218,7 @@
         public DevExpress.XtraEditors.SpinEdit seAydaBirikinci;
         public DevExpress.XtraEditors.CheckEdit chcHerilk;
         public DevExpress.XtraEditors.CheckEdit chcHekikinci;
-        public DevExpress.XtraEditors.ComboBoxEdit cmdZaman;
-        public DevExpress.XtraEditors.ComboBoxEdit cmdGun;
+        public DevExpress.XtraEditors.ComboBoxEdit cboZaman;
+        public DevExpress.XtraEditors.ComboBoxEdit cboGun;
     }
 }

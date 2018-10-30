@@ -17,17 +17,16 @@
           <Property Name="Gunluk" Type="int" />
           <Property Name="Haftalik" Type="int" />
           <Property Name="Aylik" Type="int" />
-          <Property Name="HaftaGunleri" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gunler" Type="nvarchar" MaxLength="50" />
           <Property Name="AyGunu" Type="int" />
-          <Property Name="AyTuru" Type="int" />
+          <Property Name="AyTuru" Type="nvarchar" MaxLength="50" />
+          <Property Name="ZamanTipi" Type="nvarchar" MaxLength="50" />
           <Property Name="CalismaTipi" Type="bit" />
-          <Property Name="BirKereCalis" Type="bit" />
-          <Property Name="CalismaSikligi" Type="int" />
+          <Property Name="CalismaSuresi" Type="int" />
           <Property Name="CalismaBaslangic" Type="time" Precision="0" />
           <Property Name="CalismaBiris" Type="time" Precision="0" />
           <Property Name="ZamanBaslangic" Type="date" />
           <Property Name="ZamanBitis" Type="date" />
-          <Property Name="ZamanTip" Type="bit" />
         </EntityType>
         <EntityContainer Name="BTHModelStoreContainer">
           <EntitySet Name="Zamanlayici" EntityType="Self.Zamanlayici" Schema="dbo" store:Type="Tables" />
@@ -52,16 +51,15 @@
           <Property Name="Gunluk" Type="Int32" />
           <Property Name="Haftalik" Type="Int32" />
           <Property Name="Aylik" Type="Int32" />
-          <Property Name="HaftaGunleri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="AyGunu" Type="Int32" />
-          <Property Name="AyTuru" Type="Int32" />
-          <Property Name="BirKereCalis" Type="Boolean" />
-          <Property Name="CalismaSikligi" Type="Int32" />
+          <Property Name="AyTuru" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="CalismaBaslangic" Type="Time" Precision="0" />
           <Property Name="CalismaBiris" Type="Time" Precision="0" />
           <Property Name="ZamanBaslangic" Type="DateTime" Precision="0" />
           <Property Name="ZamanBitis" Type="DateTime" Precision="0" />
-          <Property Name="ZamanTip" Type="Boolean" />
+          <Property Name="ZamanTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gunler" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CalismaSuresi" Type="Int32" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -72,16 +70,15 @@
           <EntitySetMapping Name="Zamanlayici">
             <EntityTypeMapping TypeName="BTHModel.Zamanlayici">
               <MappingFragment StoreEntitySet="Zamanlayici">
-                <ScalarProperty Name="ZamanTip" ColumnName="ZamanTip" />
+                <ScalarProperty Name="CalismaSuresi" ColumnName="CalismaSuresi" />
+                <ScalarProperty Name="Gunler" ColumnName="Gunler" />
+                <ScalarProperty Name="ZamanTipi" ColumnName="ZamanTipi" />
                 <ScalarProperty Name="ZamanBitis" ColumnName="ZamanBitis" />
                 <ScalarProperty Name="ZamanBaslangic" ColumnName="ZamanBaslangic" />
                 <ScalarProperty Name="CalismaBiris" ColumnName="CalismaBiris" />
                 <ScalarProperty Name="CalismaBaslangic" ColumnName="CalismaBaslangic" />
-                <ScalarProperty Name="CalismaSikligi" ColumnName="CalismaSikligi" />
-                <ScalarProperty Name="BirKereCalis" ColumnName="BirKereCalis" />
                 <ScalarProperty Name="AyTuru" ColumnName="AyTuru" />
                 <ScalarProperty Name="AyGunu" ColumnName="AyGunu" />
-                <ScalarProperty Name="HaftaGunleri" ColumnName="HaftaGunleri" />
                 <ScalarProperty Name="Aylik" ColumnName="Aylik" />
                 <ScalarProperty Name="Haftalik" ColumnName="Haftalik" />
                 <ScalarProperty Name="Gunluk" ColumnName="Gunluk" />

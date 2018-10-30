@@ -4,16 +4,15 @@
     <EntitySetMapping Name="Zamanlayici">
       <EntityTypeMapping TypeName="BTHModel.Zamanlayici">
         <MappingFragment StoreEntitySet="Zamanlayici">
-          <ScalarProperty Name="ZamanTip" ColumnName="ZamanTip" />
+          <ScalarProperty Name="CalismaSuresi" ColumnName="CalismaSuresi" />
+          <ScalarProperty Name="Gunler" ColumnName="Gunler" />
+          <ScalarProperty Name="ZamanTipi" ColumnName="ZamanTipi" />
           <ScalarProperty Name="ZamanBitis" ColumnName="ZamanBitis" />
           <ScalarProperty Name="ZamanBaslangic" ColumnName="ZamanBaslangic" />
           <ScalarProperty Name="CalismaBiris" ColumnName="CalismaBiris" />
           <ScalarProperty Name="CalismaBaslangic" ColumnName="CalismaBaslangic" />
-          <ScalarProperty Name="CalismaSikligi" ColumnName="CalismaSikligi" />
-          <ScalarProperty Name="BirKereCalis" ColumnName="BirKereCalis" />
           <ScalarProperty Name="AyTuru" ColumnName="AyTuru" />
           <ScalarProperty Name="AyGunu" ColumnName="AyGunu" />
-          <ScalarProperty Name="HaftaGunleri" ColumnName="HaftaGunleri" />
           <ScalarProperty Name="Aylik" ColumnName="Aylik" />
           <ScalarProperty Name="Haftalik" ColumnName="Haftalik" />
           <ScalarProperty Name="Gunluk" ColumnName="Gunluk" />
